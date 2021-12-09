@@ -1,20 +1,17 @@
-import {useHistory} from 'react-router';
+
+import Body from '../components/dashboard/body';
+import Topbar from '../components/dashboard/topBar';
+
 
 function Dashboard(){
-
-    const history = useHistory();
-  
-
-    const logout = ()=>{
-        localStorage.removeItem('token');
-        history.push('/');
-        
-    }
 
     return(
         <>
 
-            <button onClick = {logout}> logout</button>
+            <div className='row'>
+                <Topbar/>
+                <Body/>
+            </div>
 
         </>
     )

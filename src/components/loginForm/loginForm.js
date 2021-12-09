@@ -1,9 +1,9 @@
 import { useState } from "react";
 import{useDispatch} from 'react-redux';
 import { bindActionCreators } from "redux";
-import * as actions from '../../redux/actions';
+import * as actions from '../../redux/auth/actions';
 import { useHistory } from "react-router";
-import "./loginForm.css";
+
 
 
 
@@ -32,7 +32,7 @@ function LoginForm(){
 
     return(
         <> 
-           <div className = "">
+           <div className = "container border py-3">
                 <h1 className = "p-2 text-center text-white bg-primary" >User Login</h1>
                 <form onSubmit = {submitHander} >
                     <div class="form-group">

@@ -7,6 +7,7 @@ import { BrowserRouter as Router,
 import {ToastContainer} from 'react-toastify';
 import LoginPage from './pages/login';
 import Dashboard from './pages/dashboard';
+import Loading from './components/loadingSpiner';
 
 function App() {
   return (
