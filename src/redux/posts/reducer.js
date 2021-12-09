@@ -6,21 +6,20 @@ const initialState = {
     error : []
 }
 
-
 const Reducer = (state = initialState, action)=>{
     switch (action.type) {
-        case Types.FETCH_USERS_REQUEST:
+        case Types.FETCH_POSTS_REQUEST:
             return{
                 ...state,
                 loading : true
             }
-        case Types.FETCH_USERS_SUCCESS:
+        case Types.FETCH_POSTS_SUCCESS:
             return{
                 ...state,
                 articles : action.payload,
                 loading : false
             }
-        case Types.FETCH_USERS_FAILURE:
+        case Types.FETCH_POSTS_FAILURE:
             return{
                 ...state,
                 error : action.payload,

@@ -1,7 +1,6 @@
 import { useHistory } from "react-router-dom";
 
 function Topbar(){
-
     const history = useHistory();
     const Logout = ()=>{
          localStorage.removeItem('token');

@@ -3,20 +3,20 @@ import * as Types from './types';
 
 const fetchUserPostRequest = ()=>{
     return{
-        type : Types.FETCH_USERS_REQUEST
+        type : Types.FETCH_POSTS_REQUEST
     }
 }
 
 const fetchUserSuccess = (data)=>{
     return{
-        type : Types.FETCH_USERS_SUCCESS,
+        type : Types.FETCH_POSTS_SUCCESS,
         payload : data
     }
 }
 
 const fetchUserFailure  = err =>{
     return{
-        type : Types.FETCH_USERS_FAILURE,
+        type : Types.FETCH_POSTS_FAILURE,
         payload : err
     }
 }

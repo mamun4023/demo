@@ -18,8 +18,6 @@ function LoginPage(){
                 </div>
                 <div className = "col-md"></div>
             </div>
-              
-           
         </>
     )
 }

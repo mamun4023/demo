@@ -1,15 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
 import LoginPage from './pages/login';
 import Dashboard from './pages/dashboard';
-import Loading from './components/loadingSpiner';
 
-function App() {
+function App(){
   return (
        <>
             <ToastContainer/>
@@ -22,6 +17,5 @@ function App() {
        </>
   );
 }
-
 
 export default App;

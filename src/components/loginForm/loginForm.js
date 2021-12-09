@@ -4,18 +4,12 @@ import { bindActionCreators } from "redux";
 import * as actions from '../../redux/auth/actions';
 import { useHistory } from "react-router";
 
-
-
-
 function LoginForm(){
     const[email, setEmail] = useState("");
     const[password, setPassword] = useState("");
-    
     const history = useHistory();
     const dispatch = useDispatch();
     const {Login} = bindActionCreators(actions, dispatch);
-
-
 
     const submitHander = (e)=>{
         e.preventDefault();
@@ -23,11 +17,10 @@ function LoginForm(){
             email,
             password
         }
-       Login(user);
-       if(localStorage.getItem('token')){
-           history.push("/dashboard")
+        Login(user);
+            if(localStorage.getItem('token')){
+                history.push("/dashboard")
        }
-
     }
 
     return(
